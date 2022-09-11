@@ -10,6 +10,7 @@ public class Variables {
 
     char myChar = 'c';
     char myCharTwo = 'a';
+    char myCharThree = 'b';
     boolean myBoolean = true;
     byte myByte = 123;
 }
