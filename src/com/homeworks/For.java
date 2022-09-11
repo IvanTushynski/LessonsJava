@@ -9,5 +9,9 @@ public class For {
         for ( int cola = 0 ; cola <= 20%18 ; cola++ ) {
             System.out.println(cola);
         }
+
+        for (int a = 30; a >=10 ; a = a - 5){
+            System.out.println(a);
+        }
     }
 }
