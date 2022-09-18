@@ -2,7 +2,7 @@ package com.homeworks;
 
 public class Variables {
     int myInt = 232321231;
-    short myShort = 12312;
+    short myShort = 30000;
     long myLong = 1231231232;
 
     float myFloat = 1231231231231231231231231231231231231.123123123123123123123123123123123123123123123123f;
