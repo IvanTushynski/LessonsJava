@@ -15,8 +15,8 @@ public class PlayerAttack_With_Level {
             int playerLevel = scanLevel.nextInt();
 
             int[][] attackStates = {{2, 4, 6},
-                    {20, 40, 60},
-                    {200, 400, 600}};
+                                    {20, 40, 60},
+                                    {200, 400, 600}};
             int[][] defenceStates = {{1, 3, 5},
                     {10, 30, 60},
                     {100, 300, 600}};
