@@ -6,9 +6,9 @@ public class Classes_And_Objects {
     public static void main(String[] args) {
         Person ivan = new Person();
         Person dasha = new Person();
-
-        ivan.setName(ivan.name1);
-
+        String s1 = "stringName";
+        //ivan.setName(ivan.name1);
+        ivan.setName(s1);
         ivan.age = 20;
         //применение методов
         ivan.speak();
