@@ -26,7 +26,7 @@ public class Array_of_Strings {
         for (int x:number
              ) {
             sum = sum+x;
-            System.out.println(sum);
+            System.out.println(sum);//каждую итерацию добавляет сумму предидущих чисел(1 + (1+2) + (1+2+3))
         }
 
         int value = 0; //выделяет память компьютера - макс 32 бита
