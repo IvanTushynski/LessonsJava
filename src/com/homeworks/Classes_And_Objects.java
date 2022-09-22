@@ -7,12 +7,13 @@ public class Classes_And_Objects {
         Person ivan = new Person();
         Person dasha = new Person();
 
-        ivan.name = "Ivan";
+        ivan.setName(ivan.name1);
+
         ivan.age = 20;
         //применение методов
         ivan.speak();
-        ivan.sayHello();
-        int years1 = ivan.calculateYearsToRetirement();
+        ivan.sayHello();// просто вызывает метод
+        int years1 = ivan.calculateYearsToRetirement(); //вызывает метод в переменной
         dasha.name = "Dasha";
         dasha.age = 10;
         //применение методов
@@ -27,6 +28,7 @@ public class Classes_And_Objects {
 class Person {
     //у класса могут быть. данные(поля)
     String name;
+    String name1 = "Zina";
     int age;
     //действия которые он может совершать(методы)
     void speak() {
@@ -48,5 +50,10 @@ class Person {
         //тип переменной пишется в начале метода
         return years;
         //after return method don`t working.
+    }
+
+    void setName(String userName) {
+        name = userName;
+        name1 = userName;
     }
 }
