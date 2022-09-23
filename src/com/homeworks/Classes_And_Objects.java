@@ -18,10 +18,6 @@ public class Classes_And_Objects {
         dasha.age = 10;
         //применение методов
         dasha.speak();
-        dasha.sayHello();
-        int years2 = dasha.calculateYearsToRetirement();
-        System.out.println(years1 + " Лет до пенсии");
-        System.out.println(years2 + " Лет до пенсии");
     }
 }
 

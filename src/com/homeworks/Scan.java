@@ -1,8 +1,12 @@
 package com.homeworks;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class Scan {
+    public Scan(InputStream in) {
+    }
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Ввести номер:");
