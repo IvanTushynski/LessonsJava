@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class FruitMachine {
     public static void main(String[] args) {
         Scanner fruitScan = new Scanner(System.in);
+
         FruitApple machineApple = new FruitApple();
         FruitBanana machineBanana = new FruitBanana();
         FruitPear machinePear = new FruitPear();
@@ -12,30 +13,66 @@ public class FruitMachine {
         //Вводные данные по фруктам
         //яблоки
         System.out.println("Enter Amount Of Apples:");
+        System.out.println("--------------------");
         machineApple.fruitsAppleAmount = fruitScan.nextInt();
         System.out.println("Enter Price To Apples:");
+        System.out.println("--------------------");
         machineApple.priceApple = fruitScan.nextInt();
 
         //бананы
         System.out.println("Enter Amount Of Bananas:");
+        System.out.println("--------------------");
         machineBanana.fruitsBananaAmount = fruitScan.nextInt();
         System.out.println("Enter Price To Bananas:");
+        System.out.println("--------------------");
         machineBanana.priceBanana = fruitScan.nextInt();
 
         //груши
         System.out.println("Enter Amount Of Pears:");
+        System.out.println("--------------------");
         machinePear.fruitsPearAmount = fruitScan.nextInt();
-        System.out.println("Enter Price To Apples:");
+        System.out.println("Enter Price To Pears:");
+        System.out.println("--------------------");
         machinePear.pricePear = fruitScan.nextInt();
 
         //Цикл покупки фруктов
-        for (int i = 1; i > 0; i++) {
-            if (machineApple.fruitsAppleAmount >= 1){
-                System.out.println("Enter Amount Of Fruits To Buy:");
-                machineApple.fruitAppleBuy = fruitScan.nextInt();
-                machineApple.ai();
-            }else {
-                System.out.println("Fruit Machine Empty. Please Reload Fruits!");
+        for (int i = 1; i > 0; i++){
+            System.out.println("Select Fruit To Buy:" + " 1-Apples"+ " [" + machineApple.fruitsAppleAmount + "] " + machineApple.priceApple + "$");
+            System.out.println("--------------------");
+            System.out.println("Select Fruit To Buy:" + " 2-Bananas"+ " [" + machineBanana.fruitsBananaAmount + "] " + machineBanana.priceBanana + "$");
+            System.out.println("--------------------");
+            System.out.println("Select Fruit To Buy:" + " 3-Pears"+ " [" + machinePear.fruitsPearAmount + "] " + machinePear.pricePear + "$");
+            System.out.println("--------------------");
+            int fruitSelect = fruitScan.nextInt();
+
+            if (fruitSelect == 1){
+                if (machineApple.fruitsAppleAmount >= 1){
+                    System.out.println("Enter Amount Of Apples To Buy:");
+                    machineApple.fruitAppleBuy = fruitScan.nextInt();
+                    machineApple.ai();
+                }else {
+                    System.out.println("Apples Machine Empty. Please Reload Apples!");
+                    break;
+                }
+            } else if (fruitSelect == 2) {
+                if (machineBanana.fruitsBananaAmount >= 1){
+                    System.out.println("Enter Amount Of Bananas To Buy:");
+                    machineBanana.fruitBananaBuy = fruitScan.nextInt();
+                    machineBanana.ai();
+                }else {
+                    System.out.println("Bananas Machine Empty. Please Reload Bananas!");
+                    break;
+                }
+            } else if (fruitSelect == 3) {
+                if (machinePear.fruitsPearAmount >= 1){
+                    System.out.println("Enter Amount Of Pears To Buy:");
+                    machinePear.fruitPearBuy = fruitScan.nextInt();
+                    machinePear.ai();
+                }else {
+                    System.out.println("Pears Machine Empty. Please Reload Pear!");
+                    break;
+                }
+            } else {
                 break;
             }
         }
