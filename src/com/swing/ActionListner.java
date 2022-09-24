@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main {
+public class ActionListner {
     public static void main(String[] args) {
 
         JFrame jFrame = new JFrame();
@@ -26,6 +26,7 @@ public class Main {
         //добавляет кнопку
         JButton jButton1 = new JButton("Gray");
         jPanel.add(jButton1);
+        //добавляет экшн на кнопку
         jButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -34,23 +35,26 @@ public class Main {
             }
         });
 
-        JButton jButton2 = new JButton("Yellow");
+        JButton jButton2 = new JButton("Red");
         jPanel.add(jButton2);
+
+        //добавляет экшн на кнопку
         jButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //код для кнопки
-                jPanel.setBackground(Color.YELLOW);
+                jPanel.setBackground(new Color(175,11,15));
             }
         });
 
         JButton jButton3 = new JButton("Yellow");
         jPanel.add(jButton3);
+        //добавляет экшн на кнопку
         jButton3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //код для кнопки
-                jPanel.setBackground(Color.RED);
+                jPanel.setBackground(new Color(221,187,0));
             }
         });
 
