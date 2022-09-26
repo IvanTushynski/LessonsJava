@@ -6,5 +6,6 @@ public class Multidimensional_Arrays {
                        {4,5,6,6,2,78,0,3432},
                        {7,8,9,456,3,462,-345}}; //шахматная доска первая[] читается вниз ---- вторая[] читается вправо
         System.out.println(num[1][7] / (num[2][3] + num[1][0]));
+        System.out.println(num[2][3]);
         }
     }
