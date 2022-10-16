@@ -5,5 +5,9 @@ public class Random {
         //рандомное число
         int a = 2 + (int) (Math.random()*10);
         System.out.println(a);
+
+        int[] exp = new int[]{1,2,3,4,5,6,7,8,9};
+        int check = (int)Math.floor(Math.random() * exp.length);
+        System.out.println(check);
     }
 }
