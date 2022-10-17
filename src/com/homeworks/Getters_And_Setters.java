@@ -1,33 +1,38 @@
 package com.homeworks;
 
+import java.util.Scanner;
+
 public class Getters_And_Setters {
     public static void main(String[] args) {
-        People person = new People();
-
-        int a = 3;
-        if (a > 3){
-            person.setYears(4);
-        } else if (a < 3) {
-            person.setYears(2);
-        } else if (a == 3) {
-            person.setYears(-20);
+        Cars cars = new Cars();
+        Scanner scanner = new Scanner(System.in);
+        int nameCar = scanner.nextInt();
+        if (nameCar == 1){
+            cars.setName(1);
+        } else if (nameCar == 2) {
+            cars.setName(2);
+        }else {
+            System.out.println("Wrong Name!!!");
         }
-        System.out.println(person.getYears());
     }
 }
 
-class People {
-    String name;
-    private int years;
-    public void setYears(int years){
-        if (years >= 1){
-            this.years = years;
-        }else {
-            System.out.println("Wrong Number!");
+class Cars {
+    private int name;
+    private int price;
+    private float weight;
+    private short mileage;
+
+    public void setName(int name) {
+        if (name <= 1) {
+            this.name = name;
+            System.out.println(name);
+        } else {
+            System.out.println("Name Very Long!");
         }
     }
-    public int getYears(){
-        return years;
-    }
 
+    public int getName() {
+        return name;
+    }
 }
