@@ -1,5 +1,6 @@
 package com.homeworks.workInterfacenAndSetters;
 
 public interface Mechanics {
-    public void Battle();
+    public void LevelUp();
+    public void ExperienceGive();
 }
