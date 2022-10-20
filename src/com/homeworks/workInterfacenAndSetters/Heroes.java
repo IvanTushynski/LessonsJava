@@ -16,7 +16,6 @@ public class Heroes{
     }
 
     public void setAttack(int attack){
-        attack = level * 2;
         if (attack >= 1) {
             this.attack = attack;
             System.out.println(attack + " Attack");
@@ -30,7 +29,7 @@ public class Heroes{
     public void setDefence(int defence){
         if (defence >= 1) {
             this.defence = defence;
-            System.out.println(defence + " Attack");
+            System.out.println(defence + " Defence");
         }
     }
 
@@ -41,7 +40,7 @@ public class Heroes{
     public void setLevel(int level){
         if (level >= 1 && level < 20) {
             this.level = level;
-            System.out.println(level + "Level");
+            System.out.println(level + " Level");
         }
     }
 

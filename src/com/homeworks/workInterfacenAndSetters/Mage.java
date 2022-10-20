@@ -8,10 +8,6 @@ public class Mage extends Heroes implements Mechanics {
         setDefence(6);
         setLevel(1);
         //-----------------------
-        getName();
-        getAttack();
-        getDefence();
-        getLevel();
     }
     @Override
     public void LevelUp() {

@@ -6,12 +6,20 @@ public class Warrior extends Heroes implements Mechanics{
         setName("Warrior");
         setAttack(12);
         setDefence(8);
-        setLevel(1);
+        setLevel(2);
         //-----------------------
         getName();
         getAttack();
         getDefence();
         getLevel();
+    }
+
+    public void warriorAttack(){
+        setAttack(12);
+    }
+
+    public void warriorDefence(){
+        setDefence(8);
     }
 
     @Override
