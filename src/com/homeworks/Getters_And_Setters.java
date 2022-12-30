@@ -16,6 +16,16 @@ public class Getters_And_Setters {
         }else {
             System.out.println("Wrong Name!!!");
         }
+
+        //30.12.2022---------------------------------------
+        Fruits fruits = new Fruits();
+        int amountFruits = scanner.nextInt();
+        if (amountFruits == 1){
+            fruits.setApple(1);
+        } else if (amountFruits == 2) {
+            fruits.setApple(0);
+        }
+
     }
 }
 
@@ -45,5 +55,18 @@ class Cars {
 
     public int getName() {
         return name;
+    }
+}
+class Fruits{
+    private int apple;
+    private int pineapple;
+
+    public void setApple(int apple) {
+        if (apple > 0){
+            this.apple = apple;
+            System.out.printf(apple + " apples");
+        }else if (apple <= 0){
+            System.out.println("Apples Needs 0+");
+        }
     }
 }
