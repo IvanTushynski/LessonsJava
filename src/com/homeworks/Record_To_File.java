@@ -16,7 +16,7 @@ public class Record_To_File {
         //printWriter.println(attack + " " + level + " " + hp);
         //printWriter.close();
         RecordNew recordNew = new RecordNew();
-        recordNew.newRecord(20,3,124);
+        recordNew.newRecord(2099,3456,124);
     }
 }
 
@@ -26,7 +26,7 @@ class RecordNew {
     private int hp;
 
     public void newRecord(int attack,int level, int hp) throws FileNotFoundException {
-        File file = new File("src/com/homeworks/recorded");
+        File file = new File("src/com/homeworks/recorded.txt");
         PrintWriter printWriter = new PrintWriter(file);
         this.attack = attack;
         this.level = level;
